@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-size: 18px;
+  color: white;
+  font-family: highgate;
+
+  background-image: url("../img/hitfall_stars_full_bg.png");
+  background-size: 100vw auto;
+  background-position: center;
+}
+
+/*BANNER*/
+
+#banner {
+  width: 100vw;
+  height: 10vh;
+
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+
+  background: #433d66;
+}
+
+#logo_div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+#logo_div
+  figure {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+  }
+
+.hitfall_logo {
+  height: 7.5vh;
+  transition: all 0.3s;
+}
+
+.hitfall_logo:hover {
+  transform: scale(1.1);
+}
+
+#logo_div
+  figcaption {
+    padding-left: 1.5vw;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+/*SIDE BAR*/
+
+#icon_sidebar {
+  width: 8vh;
+  height: 100vh;
+
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+
+  background: #433d66;
+  }
+
+#icon_sidebar
+  img {
+    height: 4.25vh;
+    padding-top: 1.25vh;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.stock_icon {
+  transition: all 0.3s;
+}
+
+.stock_icon:hover {
+  transform: scale(1.2);
+}
+
+/*MAIN CONTENT*/
+
+#cc_content {
+  text-align: center;
+}
+
+#cc_content
+  h1 {
+    padding-top: 10vh;
+  }
+
+#cc_content
+  figure {
+    padding-top: 1vh;
+    text-align: center;
+  }
+
+.custom_css {
+  background: #E2DEFF50;
+  padding-top: 2vmax;
+  padding-left: 3vmax;
+  padding-right: 3vmax;
+  padding-bottom: 2vmax;
+
+  border-top: 1.75vmax double #18F4C3;
+  border-left: 1.75vmax double #18F4C3;
+  border-right: 1vmax double #EA7AFF;
+  border-bottom: 1vmax double #EA7AFF;
+  border-top-left-radius: 1.25vmax;
+  border-bottom-right-radius: 0.75vmax;
+}
+
+#cc_content
+  figcaption {
+    padding-top: 1.5vh;
+    padding-bottom: 3vh;
+  }
+
+#credits {
+  position: relative;
+  height: 30vh;
+}
+
+#credits_text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 65%;
+  margin: auto;
+}
+
+  a {
+    color: #18F4C3;
+  }
+
+  a:link, a:visited {
+    color: #18F4C3;
+  }
+
+  a:hover {
+    color: #18F4C3;
+  }
+
+  a:focus, a:active {
+    color: #18F4C3;
+  }
+
+/*----------------------------pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 120vh) {
+
+#logo_div {
+  width: 75%;
+}
+
+#logo_div
+  figure {
+    width: 75%;
+  }
+
+.hitfall_logo {
+  height: 7.25vh;
+}
+
+#logo_div
+  figcaption {
+    padding-left: 2vw;
+    font-size: 2em;
+  }
+
+#icon_sidebar {
+  display: none;
+}
+
+.custom_css {
+  min-width: 50vw;
+}
+
+#credits_text {
+  font-size: 1.8em;
+}
+
+}
+
+/*----------------------------pixel breakpoint----------------------------*/
+
+@media screen and (max-height: 40vw) {
+
+#icon_sidebar {
+  display: none;
+}
+
+}
