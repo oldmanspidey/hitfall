@@ -197,6 +197,16 @@ body {
   display: none;
 }
 
+#cc_content
+  h1 {
+    font-size: 2.2em;
+  }
+
+#cc_content
+  figcaption {
+    font-size: 1.8em;
+  }
+
 .custom_css {
   min-width: 50vw;
 }
