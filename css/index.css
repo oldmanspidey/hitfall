@@ -134,7 +134,7 @@ body {
 
 #cc_content
   figcaption {
-    padding-top: 1.5vh;
+    padding-top: 1vh;
     padding-bottom: 3vh;
   }
 
@@ -170,6 +170,26 @@ body {
     color: #18F4C3;
   }
 
+.btn {
+  background: #433d66;
+  height: 5vh;
+  width: 10vw;
+
+  color: white;
+  font-family: highgate;
+  font-size: 1.75vh;
+
+  border: none;
+  border-top-left-radius: 1.25vmax;
+  border-bottom-right-radius: 0.75vmax;
+
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 /*----------------------------pixel breakpoint----------------------------*/
 
 @media screen and (max-width: 120vh) {
@@ -190,16 +210,20 @@ body {
 #logo_div
   figcaption {
     padding-left: 2vw;
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
 #icon_sidebar {
   display: none;
 }
 
+#cc_content {
+  padding-bottom: 10vh;
+}
+
 #cc_content
   h1 {
-    font-size: 2.2em;
+    font-size: 2.6em;
   }
 
 #cc_content
@@ -215,6 +239,13 @@ body {
   font-size: 1.8em;
 }
 
+.btn {
+
+  width: 36vw;
+
+  font-size: 1.65vh;
+}
+
 }
 
 /*----------------------------pixel breakpoint----------------------------*/
@@ -224,5 +255,7 @@ body {
 #icon_sidebar {
   display: none;
 }
+
+
 
 }
