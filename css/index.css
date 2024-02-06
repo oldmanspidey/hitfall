@@ -25,6 +25,20 @@ body {
   background: #433d66;
 }
 
+.switch {
+  height: 6vh;
+
+  position: fixed;
+  top: 2vh;
+  right: 2%;
+
+  transition: all 0.3s;
+}
+
+.switch:hover {
+  transform: scale(1.2);
+}
+
 #logo_div {
   position: absolute;
   top: 0;
