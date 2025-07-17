@@ -1,19 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 body {
+	background-image: url("../img/assets/whole_bg_long.png");
   font-size: 18px;
   color: white;
   font-family: highgate;
 
-  background-image: url("../img/hitfall_stars_full_bg.png");
   background-size: 100vw auto;
   background-position: center;
 }
 
+
 /*BANNER*/
 
 #banner {
+	background: #433d66;
+
   width: 100vw;
   height: 10vh;
 
@@ -21,25 +25,12 @@ body {
   z-index: 1;
   top: 0px;
   left: 0px;
-
-  background: #433d66;
 }
 
-.switch {
-  height: 6vh;
-
-  position: fixed;
-  top: 2vh;
-  right: 2%;
-
-  transition: all 0.3s;
-}
-
-.switch:hover {
-  transform: scale(1.2);
-}
 
 #logo_div {
+
+
   position: absolute;
   top: 0;
   bottom: 0;
@@ -54,19 +45,22 @@ body {
   figure {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 50%;
+    width: 65%;
     height: 100%;
     margin: auto;
   }
 
 .hitfall_logo {
   height: 7.5vh;
+  max-width: 30vw;
   transition: all 0.3s;
 }
 
@@ -76,137 +70,84 @@ body {
 
 #logo_div
   figcaption {
-    padding-left: 1.5vw;
-    font-size: 1.2em;
+    max-height: 9vh;
+    padding-left: 1.25vw;
+    font-size: 2.5vh;
     font-weight: bold;
     text-align: center;
   }
 
-/*SIDE BAR*/
 
-#icon_sidebar {
-  width: 8vh;
-  height: 100vh;
 
-  position: fixed;
-  z-index: 2;
-  top: 0px;
-  left: 0px;
 
-  background: #433d66;
-  }
-
-#icon_sidebar
-  img {
-    height: 4.25vh;
-    padding-top: 1.25vh;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-.stock_icon {
-  transition: all 0.3s;
-}
-
-.stock_icon:hover {
-  transform: scale(1.2);
-}
 
 /*MAIN CONTENT*/
 
-#cc_content {
+#content {
   text-align: center;
 }
 
-#cc_content
+#content
   h1 {
-    padding-top: 10vh;
+/*    padding-top: 10vh;*/
   }
 
-#cc_content
-  figure {
-    padding-top: 1vh;
-    text-align: center;
-  }
+#content
 
-.custom_css {
-  background: #E2DEFF50;
+
+.game_logo {
+  max-width: 30vw;
+
   padding-top: 2vmax;
   padding-left: 3vmax;
   padding-right: 3vmax;
   padding-bottom: 2vmax;
 
-  border-top: 1.75vmax double #18F4C3;
-  border-left: 1.75vmax double #18F4C3;
-  border-right: 1vmax double #EA7AFF;
-  border-bottom: 1vmax double #EA7AFF;
-  border-top-left-radius: 1.25vmax;
-  border-bottom-right-radius: 0.75vmax;
+  filter: drop-shadow(0em 0em 0.5em #433d66);
 }
 
-#cc_content
-  figcaption {
-    padding-top: 1vh;
-    padding-bottom: 3vh;
-  }
 
-#credits {
+
+#directory {
   position: relative;
-  height: 30vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
 }
 
-#credits_text {
-  position: absolute;
+#directory_text {
+/*  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   width: 50%;
   height: 65%;
-  margin: auto;
+  margin: auto;*/
 }
 
-  a {
-    color: #18F4C3;
-  }
 
-  a:link, a:visited {
-    color: #18F4C3;
-  }
 
-  a:hover {
-    color: #18F4C3;
-  }
-
-  a:focus, a:active {
-    color: #18F4C3;
-  }
-
-.btn {
-  background: #433d66;
-  height: 5vh;
-  width: 10vw;
-
-  color: white;
-  font-family: highgate;
-  font-size: 1.75vh;
-
-  border: none;
-  border-top-left-radius: 1.25vmax;
-  border-bottom-right-radius: 0.75vmax;
-
-  transition: all 0.4s;
+a {
+	color: #18F4C3;
 }
 
-.btn:hover {
-  transform: scale(1.1);
+a:link, a:visited {
+	color: #18F4C3;
 }
+
+a:hover {
+	color: #18F4C3;
+}
+
+a:focus, a:active {
+	color: #18F4C3;
+}
+
+
 
 /*----------------------------pixel breakpoint----------------------------*/
 
-@media screen and (max-width: 120vh) {
+@media screen and (max-width: 125vh) {
 
 #logo_div {
   width: 75%;
@@ -223,53 +164,30 @@ body {
 
 #logo_div
   figcaption {
+    font-size: 2vh;
     padding-left: 2vw;
-    font-size: 1.8em;
   }
 
-#icon_sidebar {
-  display: none;
-}
 
-#cc_content {
+#content {
   padding-bottom: 10vh;
 }
 
-#cc_content
+#content
   h1 {
-    font-size: 2.6em;
+    font-size: 2.25em;
   }
 
-#cc_content
-  figcaption {
-    font-size: 1.8em;
-  }
 
-.custom_css {
-  min-width: 50vw;
+.game_logo {
+  min-width: 60vw;
 }
 
-#credits_text {
-  font-size: 1.8em;
-}
-
-.btn {
-
-  width: 36vw;
-
-  font-size: 1.65vh;
-}
-
-}
-
-/*----------------------------pixel breakpoint----------------------------*/
-
-@media screen and (max-height: 40vw) {
-
-#icon_sidebar {
-  display: none;
+#directory_text {
+  font-size: 1.2em;
 }
 
 
 
 }
+
