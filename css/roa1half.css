@@ -70,6 +70,7 @@ body {
 
 .hitfall_logo {
   height: 7.5vh;
+  max-width: 30vw;
   transition: all 0.3s;
 }
 
@@ -247,7 +248,7 @@ body {
 
 #cc_content
   figcaption {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
 .custom_css {

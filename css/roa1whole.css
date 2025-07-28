@@ -69,6 +69,7 @@ body {
 
 .hitfall_logo {
   height: 7.5vh;
+  max-width: 30vw;
   transition: all 0.3s;
 }
 
@@ -78,13 +79,11 @@ body {
 
 #logo_div
   figcaption {
-
     max-height: 9vh;
     padding-left: 1.25vw;
     font-size: 2.5vh;
     font-weight: bold;
     text-align: center;
-
   }
 
 /*SIDE BAR*/
@@ -247,7 +246,7 @@ body {
 
 #cc_content
   figcaption {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
 .custom_css {
